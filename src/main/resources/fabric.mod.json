@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "librarian-trade-finder",
+  "version": "${version}",
+  "name": "Librarian Trade Finder Continued",
+  "description": "A fork of Librarian Trade Finder by Greenman999, continued and ported to Minecraft 26.3 by Mr_Lan123. Finds selected enchanted-book trades from librarian villagers.",
+  "authors": [
+    "Greenman999 (original author)",
+    "Mr_Lan123 (fork author / maintainer)"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/librarian-trade-finder",
+    "sources": "https://github.com/Greeenman999/LibrarianTradeFinder",
+    "issues": "https://github.com/Greeenman999/LibrarianTradeFinder/issues"
+  },
+  "icon": "assets/librarian-trade-finder/icon.png",
+  "license": "GPL-3.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.greenman999.librariantradefinder.LibrarianTradeFinder"
+    ],
+    "modmenu": [
+      "de.greenman999.librariantradefinder.compat.ModMenuImpl"
+    ]
+  },
+  "mixins": [
+    "librarian-trade-finder.mixins.json"
+  ],
+  "accessWidener": "librarian-trade-finder.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=21.0.0"
+  }
+}
